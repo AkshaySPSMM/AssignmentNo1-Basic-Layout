@@ -1,0 +1,143 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header
+{
+    padding: 0.3em 1em;
+    background-color: aqua;
+    font-size: 3em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(cyan,rgb(13, 33, 123));
+    color: #fff;
+    height: 10%;
+}
+.sub
+{
+    padding: 2em;
+    height: 100%;
+}
+h1
+{
+    font-size: 3em;
+}
+main
+{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 2.5rem;
+    justify-content: center;
+    height: 70%;
+}
+.leftsection {
+    width: 45%;
+    font-size: clamp(0.5rem,5vh - 1rem,2rem);
+    text-align: justify;
+    background: linear-gradient(90deg, rgb(142, 223, 80), #2abed5);
+    border-radius: 2em;
+    padding: 0rem 1rem;
+    align-content: center;
+    height: auto;
+}
+.rightsection
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    overflow: hidden;
+    gap: 5rem;
+}
+figure
+{
+    height: auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+figure img
+{
+    height: auto;
+    width: 100%;
+    border-radius: 2rem;
+}
+.scorecard
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    padding: 1.5em;
+    border-radius: 2rem;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span ul
+{
+    display: flex;
+    padding: 0;
+    gap:2rem;
+    margin: 0;
+}
+.teamone,.teamtwo
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    font-weight: bold;
+}
+footer
+{
+    background: linear-gradient(black,grey);
+    height: 5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+}
+@media (max-width: 1200px) {
+    main
+    {
+        flex-direction: column;
+        font-size: 70%;
+        align-items: center;
+    }
+    .leftsection,.rightsection
+    {
+        width: 70%;
+    }
+}
+@media (max-width: 769px) {
+    header {
+        font-size: 2em;
+        text-align: center;
+    }
+    h1
+    {
+        font-size: 2em;
+    }
+    .leftsection,.rightsection
+    {
+        line-height: 100%;
+        width: 100%;
+        
+    }
+    .rightsection {
+        gap: 1em;
+    }
+    .scorecard {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        max-width: 62%;
+    }
+}
